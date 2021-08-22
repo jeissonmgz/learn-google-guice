@@ -1,6 +1,6 @@
 package io.jeissonmgz.services;
 
-public interface Print {
+public interface PrintService {
 
     void print(String text);
 }

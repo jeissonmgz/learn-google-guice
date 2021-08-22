@@ -1,6 +1,6 @@
 package io.jeissonmgz.services;
 
-public class PrintImpl implements Print {
+public class PrintServiceImpl implements PrintService {
 
     @Override
     public void print(String text) {
