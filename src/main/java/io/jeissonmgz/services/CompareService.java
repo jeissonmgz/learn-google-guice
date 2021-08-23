@@ -1,8 +1,13 @@
 package io.jeissonmgz.services;
 
+import com.google.inject.Inject;
+
 public class CompareService {
 
-    public void compareInstances(PrintService printService, Object o1, Object o2) {
+    @Inject
+    private PrintService printService;
+
+    public void compareInstances(Object o1, Object o2) {
         printService.print("Instaces "
                 .concat(o1.toString())
                 .concat(" with ")

@@ -18,8 +18,8 @@ public class GuiceApp {
         CompareService compareService = injector.getInstance(CompareService.class);
         CompareService compareService2 = injector.getInstance(CompareService.class);
         searchText(textService, printService);
-        compareService.compareInstances(printService, textService, textService2);
-        compareService.compareInstances(printService, compareService, compareService2);
+        compareService.compareInstances(textService, textService2);
+        compareService.compareInstances(compareService, compareService2);
 
     }
 
